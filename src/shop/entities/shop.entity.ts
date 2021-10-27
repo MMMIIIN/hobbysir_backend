@@ -19,4 +19,16 @@ export class Shop {
 
   @Column()
   isParking: boolean;
+
+  @Column()
+  address: string;
+
+  @Column()
+  road_address: string;
+
+  @Column()
+  x: string;
+
+  @Column()
+  y: string;
 }
