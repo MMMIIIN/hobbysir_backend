@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { Shop } from './shop/entities/shop.entity';
 import { ShopController } from './shop/shop.controller';
 import { ShopModule } from './shop/shop.module';
+import { ImageModule } from './image/image.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { ShopModule } from './shop/shop.module';
       synchronize: true,
     }),
     ShopModule,
+    ImageModule,
   ],
   controllers: [AppController],
   providers: [AppService],
